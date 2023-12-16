@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured destinations</title>
+    <link rel="stylesheet" href="./css/fetures.css">
+</head>
+<body>
+
+<div id="app">
+    <h1>Featured destinations Management</h1>
+    <div class="searchBlock">
+
+        <input type="text" id="searchInput" placeholder="Search by name...">
+        
+        <button onclick="searchCards()">Search Cards</button>
+        <button onclick="searchCards(true)">clear</button>
+    </div>
+    <div id="cards-container"></div>
+    <div class="buttonBlock">
+
+        <button onclick="addCard()">Add Card</button>
+        <button onclick="sortCards()">Sort Cards</button>
+        <button onclick="calculateTotal()">Calculate Total</button>
+    </div>
+    
+    
+</div>
+
+<div id="editModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Edit Card</h2>
+        <label for="editName">Name:</label>
+        <input type="text" id="editName">
+        <label for="editPrice">Price:</label>
+        <input type="number" id="editPrice">
+        <button onclick="saveChanges()">Save Changes</button>
+    </div>
+</div>
+
+<script src="./js/store.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
