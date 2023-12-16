@@ -1,0 +1,60 @@
+.hero {
+    height: 100vh;
+    background: linear-gradient(270deg, #eaeaea, #efefef 80%);
+    display: flex;
+
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 50px;
+    line-height: 1.1;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.hero-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-hand-icon img {
+    width: 105px;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 550px;
+}
+
+.buy-now {
+    width: 130px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    background: #860f0f;
+    font-size: 20px;
+    color: #fff;
+    margin: 50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
